@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>1</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    color: #fff;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Abel', sans-serif;
+    font-size:3em;
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+header h1 {
+    margin-top: -100px;
+}
+
+header,
+header:hover {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image:url("img/3.jpeg");
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 150vh;
+}
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align-last: center;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+    <header>
+        <h1 style="margin-top: 10px;" ><strong>Parallax #1</strong></h1>
+        <p>A simple parallax effect with background image. Just HTML and CSS</p>
+        <br><br><br>
+        <p style="padding: 50px; margin-top: 200px; background-color: rgba(0, 0, 0, 0.213); border-radius: 18px ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatibus provident eius incidunt ex? Ducimus, officia laudantium molestiae molestias ipsa dolorum fuga vel harum officiis provident ad alias, hic nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos expedita hic exercitationem aut, ipsa ratione aliquid blanditiis maiores eaque labore quis odit ad nobis? Suscipit consequatur accusamus magnam reiciendis doloremque!</p>
+    </header>
+
+</body>
+
+</html>
